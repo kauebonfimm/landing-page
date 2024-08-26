@@ -1,0 +1,384 @@
+* {
+  margin: 0px;
+  background-color: #fff;
+  font-family: "Nunito Sans", sans-serif;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-top: 50px;
+}
+
+.logo>img {
+  padding-bottom: 10px;
+  box-shadow: #000;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-left: 20%;
+}
+
+
+
+.menu-link {
+  transition: 0.1s transform ease-in-out;
+  z-index: -100;
+  z-index: 100;
+  color: #000;
+  padding: 5px;
+  margin-left: 10%;
+}
+
+.menu-link:hover {
+  transform: scale(1.2);
+  /* background-color: rgba(118, 76, 146, 0.548); */
+  background-color: rgb(65, 6, 104);
+  color: white;
+  border-radius: 10px;
+  transition: 0.01s;
+}
+
+.all-content {
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+}
+
+.all-content>section {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.contact {
+  transition: 0.2s transform ease-in-out;
+  background-color: rgb(65, 6, 104);
+  padding: 10px 10px;
+  border-radius: 20%;
+  border-color: #fff;
+  color: #fff;
+  box-shadow: #000;
+  margin-left: 100%;
+}
+
+.contact:hover {
+  transform: scale(1.1);
+}
+
+.titles {
+  font-size: 30px;
+}
+
+/* Home */
+#home {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.home-content {
+  position: relative;
+  text-align: center;
+  color: #000;
+  justify-items: auto;
+}
+
+.home-content h1 {
+  font-size: 36px;
+  line-height: 35px;
+}
+
+.home-content p {
+  font-size: 14px;
+  margin: 30px 0px;
+  justify-self: start;
+}
+
+.home-content-image {
+  position: relative;
+  align-self: center;
+  margin-block: 40px;
+  height: 300px;
+  width: 500px;
+  animation: jump 1s ease-in-out infinite alternate-reverse
+}
+
+@keyframes jump {
+  0% {
+    top: 0px
+  }
+
+  100% {
+    top: 50px
+  }
+}
+
+/* About me */
+
+#about-me {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+#about-me>section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3px;
+  gap: 20px;
+}
+
+#about-me article {
+  justify-content: space-between;
+}
+
+#about-me div {
+  display: flex;
+  align-self: flex-start;
+  justify-content: start;
+  gap: 8px;
+}
+
+.social-medias {
+  font-size: 30px;
+  color: #000;
+  border-radius: 100%;
+}
+
+.my-photo {
+  height: 300px;
+  align-self: center;
+  border: 2px solid #000;
+}
+
+/* Solutions */
+#solutions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-flow: column;
+}
+
+.solutions-title {
+  align-self: center;
+  margin: 50px;
+}
+
+.solutions-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #cec7c7;
+  border-radius: 20px;
+  padding: 20px;
+  gap: 10px;
+  transition: 0.05s transform ease-in-out;
+  max-width: 20%;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 8px rgb(81, 8, 129);
+}
+
+.card i {
+  font-size: 60px;
+}
+
+.card p,
+.card h2 {
+  text-align: justify;
+}
+
+/* Skills */
+
+#skills {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding: 0 5%;
+}
+
+#skills h2 {
+  padding-top: 30px;
+  align-self: center;
+}
+
+#skills p {
+  align-self: center;
+  padding: 0 15%;
+}
+
+#skills section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5%;
+}
+
+.list-skills {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 8px rgb(81, 8, 129);
+  gap: 20px;
+  width: 25%;
+  padding: 5px;
+}
+
+.sub-title {
+  font-size: 20px;
+  align-self: center;
+}
+
+.list-skills-cards {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-flow: wrap;
+  padding: 5px;
+  flex-flow: wrap;
+}
+
+.list-skills-card {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 50%;
+  flex-flow: wrap;
+}
+
+.list-skills-card:hover {
+  transform: scale(1.2);
+}
+
+.list-skills-card h4 {
+  font-size: 15px;
+  align-self: center;
+}
+
+.list-skills-card i {
+  align-self: center;
+  font-size: 25px;
+}
+
+
+/* Projects */
+#projects {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(81, 8, 129, 0.432);
+  gap: 20%
+}
+
+#projects h2 {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#projects>section>section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  box-shadow: 1% 1% 8px rgba(81, 8, 129, 0.432);
+  flex-wrap: wrap;
+  padding: 25px;
+}
+
+#projects section h3 {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  gap: 20px;
+}
+
+.project>h4 {
+  text-align: center;
+  font-size: 20;
+}
+
+.project-figure {
+  width: 300px;
+  height: 400px;
+}
+
+.project p {
+  text-align: justify;
+}
+
+.project>.tags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+
+.tags>span {
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 20%;
+  background-color: rgba(81, 8, 129, 0.178);
+}
+
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+footer>div {
+  padding: 0 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.email {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+}
+
+.email p,
+.email i {
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.email a {
+  color: #000;
+}
